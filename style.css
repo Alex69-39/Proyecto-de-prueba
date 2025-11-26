@@ -19,11 +19,9 @@ a:hover {
     color: #3700b3;
 }
 
+/* Dejamos que Bootstrap maneje el contenedor base */
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
+    padding: 0 15px; 
 }
 
 /* Navbar */
@@ -38,35 +36,35 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Clase para asegurar el fondo y padding personalizados de la barra de navegación */
+.custom-navbar {
+    background-color: #1e1e1e !important; 
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
 }
 
+/* Asegurar que el logo mantenga el color */
 .logo {
     font-size: 2em;
-    color: #fff;
+    color: #fff !important; 
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+/* Ajuste del ícono del toggle de Bootstrap para modo oscuro */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 .nav-link {
     padding: 10px 15px;
-    color: #fff;
+    color: #fff !important; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #bb86fc;
+    color: #bb86fc !important;
 }
 
 /* Hero Section */
@@ -117,6 +115,7 @@ a:hover {
     margin-bottom: 30px;
 }
 
+/* Sobrescribir estilos de botón de Bootstrap para colores personalizados */
 .hero-buttons .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -131,15 +130,15 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: #bb86fc;
-    color: #fff;
-    border: none;
+    background-color: #bb86fc !important;
+    color: #fff !important;
+    border: none !important;
 }
 
 .btn-secondary {
-    background-color: transparent;
-    color: #bb86fc;
-    border: 2px solid #bb86fc;
+    background-color: transparent !important;
+    color: #bb86fc !important;
+    border: 2px solid #bb86fc !important;
 }
 
 /* Scroll Indicator */
@@ -186,17 +185,11 @@ a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.about-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
+/* Los estilos de layout de .about-content y .about-text han sido eliminados y se manejan con Bootstrap */
 
 .about-image {
-    flex: 1;
     max-width: 400px;
-    margin: 20px;
+    margin: 20px auto; 
     animation: fadeInLeft 1s ease-out;
 }
 
@@ -217,9 +210,8 @@ a:hover {
 }
 
 .about-text {
-    flex: 1;
     max-width: 600px;
-    margin: 20px;
+    margin: 20px auto;
     animation: fadeInRight 1s ease-out;
 }
 
@@ -235,15 +227,11 @@ a:hover {
     color: #ddd;
 }
 
-.about-stats {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+/* Los estilos de layout de .about-stats han sido eliminados y se manejan con Bootstrap */
 
 .stat-item {
     text-align: center;
-    margin: 15px;
+    margin: 15px 0; 
     color: #ddd;
 }
 
@@ -264,12 +252,7 @@ a:hover {
     background-color: #121212;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
+/* Los estilos de layout de .skills-grid han sido eliminados y se manejan con Bootstrap */
 
 .skill-card {
     background-color: #1e1e1e;
@@ -314,7 +297,7 @@ a:hover {
     background-color: #bb86fc;
     height: 8px;
     border-radius: 4px;
-    width: 0%; /* Set dynamically with JavaScript if needed */
+    width: 0%; 
 }
 
 /* Hobbies Section */
@@ -323,19 +306,14 @@ a:hover {
     background-color: #1e1e1e;
 }
 
-.hobbies-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
+/* Los estilos de layout de .hobbies-content han sido eliminados y se manejan con Bootstrap */
 
 .hobby-card {
     display: flex;
     background-color: #121212;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 20px;
+    margin: 20px auto;
     overflow: hidden;
     width: 100%;
     max-width: 700px;
@@ -393,17 +371,11 @@ a:hover {
     background-color: #121212;
 }
 
-.contact-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
+/* Los estilos de layout de .contact-content y .contact-info han sido eliminados y se manejan con Bootstrap */
 
 .contact-info {
-    flex: 1;
     max-width: 400px;
-    margin: 20px;
+    margin: 20px auto;
     animation: fadeInLeft 1s ease-out;
 }
 
@@ -421,12 +393,6 @@ a:hover {
 
 .contact-details {
     margin-bottom: 30px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 .contact-item i {
@@ -470,37 +436,27 @@ a:hover {
 }
 
 .contact-form {
-    flex: 1;
     max-width: 600px;
-    margin: 20px;
+    margin: 20px auto;
     animation: fadeInRight 1s ease-out;
 }
 
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group input,
-.form-group textarea {
+/* Sobrescribir estilos de form-control de Bootstrap para modo oscuro */
+.form-control {
     width: 100%;
     padding: 12px;
     border: 1px solid #444;
     border-radius: 5px;
-    background-color: #1e1e1e;
-    color: #fff;
+    background-color: #1e1e1e !important;
+    color: #fff !important;
     font-size: 1em;
     transition: border-color 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #bb86fc;
-    outline: none;
-}
-
-.form-group textarea {
-    resize: vertical;
-    height: 150px;
+.form-control:focus {
+    border-color: #bb86fc !important;
+    outline: none !important;
+    box-shadow: 0 0 0 0.25rem rgba(187, 134, 252, 0.25) !important; /* Estilo de foco personalizado */
 }
 
 /* Footer */
@@ -566,87 +522,4 @@ a:hover {
     }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-        display: none; /* Hide menu initially */
-    }
-
-    .nav-menu li {
-        text-align: center;
-    }
-
-    .nav-link {
-        padding: 10px;
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        margin-top: 10px;
-    }
-
-    .hamburger span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 5px 0;
-        transition: transform 0.3s ease;
-    }
-
-    .navbar.active .nav-menu {
-        display: flex; /* Show menu when active */
-    }
-
-    .navbar.active .hamburger span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .navbar.active .hamburger span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .navbar.active .hamburger span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .hero-title {
-        font-size: 2.5em;
-    }
-
-    .about-content {
-        flex-direction: column;
-    }
-
-    .about-image,
-    .about-text {
-        max-width: 100%;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-content {
-        flex-direction: column;
-    }
-
-    .contact-info,
-    .contact-form {
-        max-width: 100%;
-    }
-}
+/* NOTA: Las media queries personalizadas fueron eliminadas, ya que el sistema de cuadrícula (Grid) de Bootstrap maneja la responsividad */
